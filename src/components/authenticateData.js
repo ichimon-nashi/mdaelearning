@@ -4,7 +4,7 @@ export const loginQuestion = [
 		answer: "ampersand",
 	},
 	{
-		question: "Farewell (ITA)",
+		question: "Farewell (IT)",
 		answer: "arrivederci",
 	},
 	{
@@ -12,15 +12,18 @@ export const loginQuestion = [
 		answer: "Mavuika",
 	},
 	{
-		question: "Douze moins sept font",
+		question: "Douze moins sept font (FR)",
 		answer: "cinq",
 	},
 	{
-		question: "是 (JP)",
-		answer: "kore",
+		question: "That works for me (FR)",
+		answer: "Ca plane pour moi",
 	},
 	{
 		question: "Herectic Anthem",
 		answer: "Slipknot",
+	},{
+		question: "bjr",
+		answer: "bonjour",
 	},
 ];
