@@ -22,8 +22,21 @@ export const loginQuestion = [
 	{
 		question: "Herectic Anthem",
 		answer: "Slipknot",
-	},{
-		question: "bjr",
-		answer: "bonjour",
+	},
+	{
+		question: "Start React local development server",
+		answer: "npm run dev",
+	},
+	{
+		question: "Convert '5' to 5",
+		answer: "parseInt()",
+	},
+	{
+		question: "Publish React app",
+		answer: "npm run deploy",
+	},
+	{
+		question: "Create new Vite React app (current folder)",
+		answer: "npm create vite@latest .",
 	},
 ];

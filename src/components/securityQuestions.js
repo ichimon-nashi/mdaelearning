@@ -72,7 +72,33 @@ export const securityQuestions = [
 	{
 		question: "旅客登機後，出現下列何者情形，該班次座艙長或其代理人得評估拒絕其搭乘？",
 		category: "security",
-		answer: ["應保持原狀不得任意移動。", "應排除是否為無人伴隨之私人物品。", "立即通報機長及保安管理機關。", "以上皆是。"],
+		answer: [
+			"以上皆是。"
+		],
+    },
+	{
+		question: "航空器裝置監控設備並依飛航管制機構要求開啟使用，符合民航法規要求。",
+		category: "security",
+		answer: [
+			"是"
+		],
+    },
+	{
+		question: "值勤中之飛航組員不得離開駕艙協助處理滋擾事件。",
+		category: "security",
+		answer: [
+			"是"
+		],
+    },
+	{
+		question: "下列何者為不得攜帶進入航空器之危安物品？",
+		category: "security",
+		answer: [
+			"含有離電池之電擊棒。",
+			"未經機場安檢線同意，但有醫療需求之注射針頭。",
+			"圓頭奶油餐刀。",
+			"金屬毛線針。"
+		],
     },
 	{
 		question: "下列班機遇劫持處置，何者正確？",

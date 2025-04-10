@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: bumblebee  --default;
+  themes: dracula  --default;
 }
 
 * {
@@ -52,11 +52,11 @@ form {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: 0.2rem;
 
   @media (max-width:800px) {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
 }
 
@@ -105,8 +105,15 @@ h1 {
 /* Category selector */
 
 .tab {
-display: flex;
-flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+
+input[type="radio"]:checked {
+  color: #FFC278;
+  font-weight: bold;
+  border: 1px solid #FFC278;
 }
 
 /* Main content */
@@ -149,9 +156,23 @@ main {
 
 /* Searchbox */
 .searchbox {
-  margin: 1.5rem 0;
-  padding: 0.5rem 0 0.5rem 2rem;
+  margin: 1.5rem 4rem 1.5rem 4rem;
+  padding: 0.5rem 0 0.5rem 0;
+
+  @media (max-width:800px) {
+    margin: 1.5rem 0.5rem 1.5rem 0rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+  }
 }
+
+.searchInput {
+  width: 100%;
+}
+
+.magnifyingIcon {
+  margin-left: 1rem;
+}
+
 
 input[type=search] {
   margin-left: 0.5rem;

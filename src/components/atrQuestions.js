@@ -43,7 +43,7 @@ export const atrQuestions = [
 	},
 	{
 		question:
-			"發現CMS上後貨艙SMOKE警示燈亮起，應立即使用F1座椅上方之滅火孔滅火。",
+			"發現CMS後貨艙SMOKE警示燈亮起，應立即使用F1座椅上方之滅火孔滅火。",
 		category: "atr",
 		answer: ["否"],
 	},

@@ -14,7 +14,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * loginQuestion.length))
 
-  const allQuestions = [...smsQuestions, ...atrQuestions, ...b738Questions, ...securityQuestions];
+  const allQuestions = [...smsQuestions, ...atrQuestions, ...b738Questions, ...securityQuestions, ...itQuestions];
 
   // --------LOGIN VALIDATION--------
   const handleSubmit = () => {
@@ -36,6 +36,7 @@ function App() {
 
   // --------CATEGORY FILTER--------
   const handleChange = (e) => {
+    console.log(`Selected category: ${e.target.value}`)
     setSelectedCategory(e.target.value)
   };
 
@@ -80,6 +81,7 @@ function App() {
       {isLoggedIn && (<main>
         <div className="title">
           <h1 className="text-3xl title neonText">e-<span className="redNeon neon-flicker">FUCKING</span> learning!</h1>
+          <p><small className="warning">最後更新: 2025/4/1</small></p>
           <small className="warning">題目有可能有被修改過，不是100%準!</small>
         </div>
 
@@ -89,12 +91,12 @@ function App() {
           <input type="radio" name="test_category" className="tab" value="atr" onChange={handleChange} aria-label="ATR" />
           <input type="radio" name="test_category" className="tab" value="b738" onChange={handleChange} aria-label="B738" />
           <input type="radio" name="test_category" className="tab" value="security" onChange={handleChange} aria-label="保安" />
-          <input type="radio" name="test_category" className="tab" value="it" onChange={handleChange} aria-label="資訊" />
+          <input type="radio" name="test_category" className="tab" value="cz" onChange={handleChange} aria-label="資訊" />
         </div>
 
         <div className="searchbox">
-          <label className="input">
-            <svg className="h-[1.2rem] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+          <label className="searchInput input">
+            <svg className="magnifyingIcon h-[1.2rem] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
             <input type="search" required placeholder="Search" value={query} onChange={handleInputChange} />
           </label>
         </div>
